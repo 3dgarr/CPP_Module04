@@ -1,19 +1,15 @@
 #pragma once
+#include "./Animal.hpp"
 
 class Dog
+	: public Animal
 {
     public:
-        Dog(/* args */);
+        void	makeSound(void) const;
+
+    public:
+        Dog();
+        Dog(const Dog&);
+        Dog& operator=(const Dog&);
         ~Dog();
-    private:
-        
-
 };
-
-Dog::Dog(/* args */)
-{
-}
-
-Dog::~Dog()
-{
-}
