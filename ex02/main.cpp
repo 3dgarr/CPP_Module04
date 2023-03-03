@@ -12,9 +12,6 @@ int main()
 	delete j;
 	delete i;
 
-	// Dog	b;
-	// Cat a;
-	
 	// ==============TEST OF BRAIN/*==============
 	// Brain	b;
 	// for (size_t i = 0; i < 102; i++)
