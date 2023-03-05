@@ -7,7 +7,7 @@ class	Materia
 {
 	public:
 		AMateria*	clone() const;
-		// virtual void use(ICharacter& target);
+		virtual void use(ICharacter& target);
 
 	public:
         Materia(void);

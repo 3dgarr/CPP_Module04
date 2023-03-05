@@ -7,20 +7,21 @@ class   Character
 {
 	public:
 		const std::string&  getName( void ) const ;//+
-        void                equip( AMateria* ) ;
-        void                unequip( int ) ;
+        void                equip( AMateria* ) ;//-----------------
+        // void                unequip( int ) ;
         void                use( int, ICharacter& ) ;
 
     public:
         Character();//+
         Character(const Character&);//+
+        Character(const std::string&);//+
         Character&	operator=(const Character&);//+
         ~Character();//+
 
 	private:
 		AMateria		*inventory[4];
 		std::string		name;
-		std::size_t		size;
+		std::size_t		sizeOfInventory;
 };
 
 
