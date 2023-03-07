@@ -1,15 +1,15 @@
 #pragma once
 #include "./ICharacter.hpp"
-#include "./Materia.hpp"
+#include "./AMateria.hpp"
 
 class   Character
     :   public  ICharacter
 {
 	public:
 		const std::string&  getName( void ) const ;//+
-        void                equip( AMateria* ) ;//-----------------
-        // void                unequip( int ) ;
-        void                use( int, ICharacter& ) ;
+        void                equip( AMateria* ) ;
+        void                unequip( int ) ;
+        void                use(int, ICharacter& ) ;
 
     public:
         Character();//+
@@ -21,7 +21,6 @@ class   Character
 	private:
 		AMateria		*inventory[4];
 		std::string		name;
-		std::size_t		sizeOfInventory;
 };
 
 

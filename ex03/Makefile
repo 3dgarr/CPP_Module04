@@ -2,7 +2,7 @@ CXX = c++
 NAME = materia
 SRCS = $(wildcard *.cpp)
 OBJS = $(SRCS:.cpp=.o)
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g -ggdb3
 
 all: $(NAME)
 

@@ -1,12 +1,12 @@
 #include "./Cure.hpp"
 
 Cure::Cure()
-	:	Materia("ice")
+	:	AMateria("cure")
 {
 }
 
 Cure::Cure(const Cure& rhs)
-	:	Materia(rhs)
+	:	AMateria(rhs)
 {}
 
 
@@ -14,7 +14,7 @@ Cure&	Cure::operator=(const Cure& rhs)
 {
 	if (this == &rhs)
 		return (*this);
-	Materia::operator=(rhs);
+	AMateria::operator=(rhs);
 	return (*this);
 }
 
@@ -27,6 +27,6 @@ AMateria*	Cure::clone() const
 }
 
 void	Cure::use(ICharacter& target)
-{//"* heals <name>’s wounds *"
+{
 	std::cout << "* heals  " << target.getName() << "’s wounds *" << std::endl;
 }

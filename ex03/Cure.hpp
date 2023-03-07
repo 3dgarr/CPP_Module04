@@ -1,10 +1,10 @@
 #pragma once
 
 #include <iostream>
-#include "./Materia.hpp"
+#include "./AMateria.hpp"
 
 class	Cure
-	:	public	Materia
+	:	public	AMateria
 {
 	public:
 		AMateria*	clone() const;

@@ -1,12 +1,12 @@
 #include "./Ice.hpp"
 
 Ice::Ice()
-	:	Materia("ice")
+	:	AMateria("ice")
 {
 }
 
 Ice::Ice(const Ice& rhs)
-	:	Materia(rhs)
+	:	AMateria(rhs)
 {}
 
 
@@ -14,7 +14,7 @@ Ice&	Ice::operator=(const Ice& rhs)
 {
 	if (this == &rhs)
 		return (*this);
-	Materia::operator=(rhs);
+	AMateria::operator=(rhs);
 	return (*this);
 }
 
